@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  p3:
-    image: p3
-    build:
-      context: .
-      dockerfile: ./Dockerfile
