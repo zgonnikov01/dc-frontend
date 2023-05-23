@@ -204,7 +204,7 @@ class _ScreenMainState extends State<ScreenMain> {
                                           },
                                         ),
                                       ),
-                                      // Container( TODO ???
+                                      // Container( TODO retrieve cashier from backend
                                       //   padding: const EdgeInsets.only(right: 30),
                                       //   child: DropdownButton(
                                       //     value: dropdownValueCashier,

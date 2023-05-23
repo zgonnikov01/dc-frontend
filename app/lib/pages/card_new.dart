@@ -147,8 +147,8 @@ class _CardState extends State<StatCard> {
                                         sales.fact,
                                     name: 'Sales',
                                     // Enable data label
-                                    dataLabelSettings:
-                                        const DataLabelSettings(isVisible: false))
+                                    dataLabelSettings: const DataLabelSettings(
+                                        isVisible: false))
                               ]),
                         )
                       // Expanded(
@@ -347,7 +347,7 @@ class _BarState extends State<Bar> {
   Widget build(BuildContext context) {
     double percent = widget.percent;
 
-    const List<List<Color>> colors_all = [
+    const List<List<Color>> colorPalette = [
       [
         Color(0xFFEAF5FF),
         Color(0xFF7EAAFF),
@@ -362,8 +362,8 @@ class _BarState extends State<Bar> {
       ],
     ];
 
-    List<Color> colors = colors_all[0];
-    if (percent >= 90) colors = colors_all[1];
+    List<Color> colors = colorPalette[0];
+    if (percent >= 90) colors = colorPalette[1];
 
     return Container(
       width: double.infinity,
@@ -383,15 +383,17 @@ class _BarState extends State<Bar> {
               gradient: LinearGradient(
                 begin: Alignment.bottomLeft,
                 end: Alignment.topRight,
-                stops: [0.0, 0.5, 0.9],
+                stops: const [0.0, 0.5, 0.9],
                 colors: <Color>[colors[1], colors[2], colors[3]],
                 tileMode: TileMode.mirror,
               ),
               borderRadius: BorderRadius.only(
                 topLeft: const Radius.circular(4),
-                topRight: percent > 99.3 ? const Radius.circular(4) : Radius.zero,
+                topRight:
+                    percent > 99.3 ? const Radius.circular(4) : Radius.zero,
                 bottomLeft: const Radius.circular(4),
-                bottomRight: percent > 99.3 ? const Radius.circular(4) : Radius.zero,
+                bottomRight:
+                    percent > 99.3 ? const Radius.circular(4) : Radius.zero,
               ),
             ),
           ),

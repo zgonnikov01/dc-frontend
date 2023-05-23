@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p2/pages/mobile/screen_main.dart';
-import 'package:p2/pages/mobile/screen_rating.dart';
-import 'package:p2/pages/mobile/screen_calendar.dart';
+import 'package:p2/pages/desktop/desktop_screen_main.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class MobileScaffold extends StatefulWidget {
@@ -15,8 +13,6 @@ class _MobileScaffoldState extends State<MobileScaffold> {
   int screenIndex = 0;
   final screens = [
     ScreenMain(),
-    ScreenRating(),
-    ScreenCalendar(),
   ];
   final drawers = List<Widget>.generate(
     3,

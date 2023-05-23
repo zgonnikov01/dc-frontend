@@ -7,7 +7,6 @@ import 'package:p2/pages/desktop/login.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import 'desktop_screen_main.dart';
-import 'screen_calendar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DesktopScaffold extends StatefulWidget {
@@ -33,7 +32,6 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
   final screens = [
     const ScreenMain(),
     // ScreenRating(),
-    const ScreenCalendar(),
   ];
 
   final storage = const FlutterSecureStorage();

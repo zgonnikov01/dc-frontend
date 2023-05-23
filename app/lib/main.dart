@@ -6,7 +6,7 @@ import 'package:p2/pages/mobile/mobile_scaffold.dart';
 import 'package:p2/pages/responsive_layout.dart';
 import 'package:p2/color_schemes.g.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_interpolation_to_compose_strings, prefer_adjacent_string_concatenation
+// ignore_for_file: prefer_interpolation_to_compose_strings, prefer_adjacent_string_concatenation, no_leading_underscores_for_local_identifiers
 
 import 'dart:convert';
 import 'dart:developer';
