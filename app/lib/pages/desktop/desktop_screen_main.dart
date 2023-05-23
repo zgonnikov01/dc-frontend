@@ -248,6 +248,7 @@ class _ScreenMainState extends State<ScreenMain> {
                                                           PickerDateRange(
                                                               start, end),
                                                       onSelectionChanged:
+                                                          // ignore: no_leading_underscores_for_local_identifiers
                                                           (_range) {
                                                         setState(() {
                                                           start = _range

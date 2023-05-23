@@ -12,7 +12,7 @@ class MobileScaffold extends StatefulWidget {
 class _MobileScaffoldState extends State<MobileScaffold> {
   int screenIndex = 0;
   final screens = [
-    ScreenMain(),
+    const ScreenMain(),
   ];
   final drawers = List<Widget>.generate(
     3,
@@ -26,7 +26,7 @@ class _MobileScaffoldState extends State<MobileScaffold> {
               ],
             ),
           )
-        : Drawer(),
+        : const Drawer(),
   );
   @override
   Widget build(BuildContext context) {
