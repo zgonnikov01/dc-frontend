@@ -16,9 +16,9 @@ RUN flutter upgrade
 
 RUN mkdir /app/
 COPY ./pubspec.yaml /app/
-RUN flutter pub get
 COPY . /app/
 WORKDIR /app/
+RUN flutter pub get
 RUN flutter build web --release
 
 # Stage 2
